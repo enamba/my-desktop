@@ -1,0 +1,10 @@
+version: '3'
+services:
+    my-desktop:
+        image: "enamba/my-desktop:latest"
+        volumes:
+            - ~/.aws/:/root/.aws/
+            - sshkey-local:/root/.ssh/
+            - ~/Projects/:/root/projects/
+volumes:
+    sshkey-local:
